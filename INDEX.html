@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#6f3e35">
+<title>Laura Bakery | Freshly Baked with Love</title>
+<style>
+:root{--brown:#6f3e35;--deep:#3c2824;--rose:#d99b8d;--cream:#fffaf4;--pink:#f6e8e2;--gold:#c49a55;--muted:#806e67}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--deep)}button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{background:var(--deep);color:#fff;text-align:center;padding:9px;font:12px Arial;letter-spacing:1.5px}.nav{position:sticky;top:0;z-index:10;background:#fffaf4ed;backdrop-filter:blur(10px);border-bottom:1px solid #eadbd2}.navin{max-width:1180px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-size:25px;font-weight:bold;color:var(--brown);white-space:nowrap}.brand span{display:block;font:10px Arial;letter-spacing:3px;text-align:center;color:var(--gold);margin-top:3px}.links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.links a{color:var(--deep);text-decoration:none;font:13px Arial}.links a:hover{color:var(--rose)}.cartbtn,.primary{background:var(--brown);color:white;border:0;border-radius:30px;padding:12px 20px}.cartbtn{font:13px Arial}.hero{max-width:1180px;margin:auto;padding:65px 22px 55px;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}.eyebrow{color:var(--gold);letter-spacing:3px;font:11px Arial;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.02;font-weight:normal;margin:18px 0}.hero h1 em{color:var(--brown)}.hero p{color:var(--muted);font:15px/1.8 Arial;max-width:510px}.heroimg{height:430px;border-radius:48% 48% 12px 12px;overflow:hidden;box-shadow:18px 18px 0 var(--pink)}.heroimg img{width:100%;height:100%;object-fit:cover}.section{padding:70px 22px}.inner{max-width:1180px;margin:auto}.sectionhead{text-align:center;margin-bottom:35px}.sectionhead h2{font-size:39px;font-weight:normal;margin:10px 0}.sectionhead p{font:14px Arial;color:var(--muted)}.bestgrid,.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:white;border:1px solid #eee1d9;border-radius:14px;overflow:hidden;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:0 12px 30px #56372b15}.product img{width:100%;height:220px;object-fit:cover;display:block}.productbody{padding:18px}.product h3{font-size:21px;font-weight:normal;margin:0 0 8px}.desc{font:13px/1.6 Arial;color:var(--muted);min-height:42px}.price{font:bold 16px Arial;color:var(--brown);margin:12px 0}.productfoot{display:flex;align-items:center;justify-content:space-between;gap:10px}.smallbtn{border:1px solid var(--brown);color:var(--brown);background:white;border-radius:24px;padding:9px 14px;font:12px Arial}.smallbtn:hover{background:var(--brown);color:#fff}.filters{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin:0 0 28px}.filter{border:1px solid #d9c5ba;border-radius:25px;background:transparent;padding:9px 16px;color:var(--brown);font:12px Arial}.filter.active{background:var(--brown);color:#fff}.promo{background:var(--pink)}.promobox{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.promobox img{width:100%;height:320px;object-fit:cover;border-radius:12px}.promobox h2{font-size:42px;font-weight:normal;margin:12px 0}.promobox p{font:14px/1.8 Arial;color:var(--muted)}.tag{display:inline-block;background:var(--brown);color:white;padding:8px 13px;border-radius:20px;font:12px Arial}.aboutgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.aboutgrid img{width:100%;height:330px;object-fit:cover;border-radius:12px}.aboutgrid p{font:14px/1.9 Arial;color:var(--muted)}.contact{background:var(--deep);color:#fff}.contact .sectionhead p{color:#d7c4bc}.contactgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contactinfo p{font:14px/1.9 Arial;color:#e6d8d1}.contactinfo a{color:#f0c7b8}.map{width:100%;height:300px;border:0;border-radius:12px}.footer{text-align:center;padding:22px;background:#2a1d1a;color:#d7c4bc;font:12px Arial}.overlay{position:fixed;inset:0;background:#201512a8;z-index:30;display:none;align-items:center;justify-content:center;padding:18px}.overlay.show{display:flex}.modal{background:var(--cream);width:min(460px,100%);padding:30px;border-radius:16px;max-height:90vh;overflow:auto}.modal h2{font-weight:normal;margin-top:0}.field{margin:13px 0}.field label{display:block;font:12px Arial;color:var(--muted);margin-bottom:6px}.field input,.field textarea,.field select{width:100%;padding:12px;border:1px solid #decfc6;border-radius:8px;background:white}.field textarea{min-height:80px}.modalactions{display:flex;gap:10px;margin-top:18px}.modalactions button{flex:1}.ghost{background:transparent;border:1px solid #cdb9ae;color:var(--brown);border-radius:30px;padding:11px}.cartline{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eadbd2;padding:12px 0;font:14px Arial}.qty button{border:0;background:var(--pink);border-radius:50%;width:25px;height:25px;color:var(--brown)}.notice{font:12px Arial;color:var(--muted);line-height:1.6}.hidden{display:none!important}
+@media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:40px}.heroimg{height:320px}.bestgrid,.products{grid-template-columns:repeat(2,1fr)}.promobox,.aboutgrid,.contactgrid{grid-template-columns:1fr}.promobox img{order:2}}
+@media(max-width:520px){.bestgrid,.products{grid-template-columns:1fr}.product img{height:240px}.section{padding:52px 17px}.navin{padding:12px 16px}.brand{font-size:21px}.hero{padding-left:18px;padding-right:18px}.heroimg{height:280px}.sectionhead h2{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="topbar">FRESHLY BAKED EVERY DAY · OPEN DAILY 07.30–22.00</div>
+<nav class="nav"><div class="navin">
+  <a class="brand" href="#home" style="text-decoration:none">Laura Bakery<span>BAKED WITH LOVE</span></a>
+  <div class="links"><a href="#home">Beranda</a><a href="#produk">Produk</a><a href="#promo">Promo</a><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a></div>
+  <button class="cartbtn" onclick="openCart()">Keranjang (<span id="cartCount">0</span>)</button>
+</div></nav>
+
+<main>
+<section class="hero" id="home">
+ <div><div class="eyebrow">A little sweetness in every bite</div><h1>Manisnya hari,<br><em>dimulai dari sini.</em></h1>
+ <p>Selamat datang di Laura Bakery. Temukan roti, pastry, cake, dan aneka kue favorit yang dibuat dengan bahan pilihan dan sepenuh hati. Cocok untuk teman santai maupun momen istimewa.</p>
+ <a class="primary" href="#produk" style="display:inline-block;text-decoration:none;margin-top:12px">Jelajahi Menu</a></div>
+ <div class="heroimg"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85" alt="Aneka pastry dan roti"></div>
+</section>
+
+<section class="section" style="background:#fff" id="terlaris"><div class="inner">
+ <div class="sectionhead"><div class="eyebrow">Customer favorites</div><h2>Produk Terlaris</h2><p>Pilihan favorit pelanggan Laura Bakery.</p></div>
+ <div class="bestgrid" id="bestGrid"></div>
+</div></section>
+
+<section class="section" id="produk"><div class="inner">
+ <div class="sectionhead"><div class="eyebrow">Our delightful menu</div><h2>Menu Produk</h2><p>Pilih camilan dan kue favoritmu.</p></div>
+ <div class="filters" id="filters"></div><div class="products" id="productGrid"></div>
+</div></section>
+
+<section class="section promo" id="promo"><div class="inner promobox">
+ <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85" alt="Cake spesial">
+ <div><div class="eyebrow">Special treats for you</div><h2>Lebih manis dengan promo spesial!</h2><span class="tag">DISKON 10%</span><p>Nikmati potongan 10% untuk pembelian minimal Rp100.000. Promo berlaku untuk pesanan melalui WhatsApp. Sebutkan kode <b>LAURA10</b> saat memesan. *Promo contoh, dapat disesuaikan oleh pemilik toko.</p><a href="#produk" class="primary" style="display:inline-block;text-decoration:none">Belanja Sekarang</a></div>
+ </div></section>
+
+<section class="section" id="tentang"><div class="inner aboutgrid">
+ <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484f1?auto=format&fit=crop&w=1000&q=85" alt="Proses membuat roti">
+ <div><div class="eyebrow">Our story</div><h2 style="font-size:39px;font-weight:normal">Tentang Laura Bakery</h2><p>Laura Bakery adalah toko roti dan kue yang hadir untuk menemani setiap momen melalui sajian yang lezat dan menggugah selera. Kami percaya bahwa kebahagiaan sederhana bisa dimulai dari aroma roti hangat dan sepotong kue favorit.</p><p>Kami berkomitmen menyajikan pilihan roti, pastry, cookies, dan cake dengan tampilan menarik serta rasa yang istimewa.</p></div>
+</div></section>
+
+<section class="section contact" id="kontak"><div class="inner">
+ <div class="sectionhead"><div class="eyebrow">We'd love to hear from you</div><h2>Hubungi Kami</h2><p>Silakan datang atau hubungi Laura Bakery untuk pemesanan.</p></div>
+ <div class="contactgrid"><div class="contactinfo">
+ <p><b>Alamat</b><br>Jl. Slamet Riyadi No. 68, Solo</p>
+ <p><b>WhatsApp</b><br><a href="https://wa.me/6285647612072" target="_blank" rel="noopener">085647612072</a></p>
+ <p><b>Email</b><br><a href="mailto:laurapramesti2@gmail.com">laurapramesti2@gmail.com</a></p>
+ <p><b>Instagram</b><br><a href="https://instagram.com/lalaprsmtii_" target="_blank" rel="noopener">@lalaprsmtii_</a></p>
+ <p><b>Jam Operasional</b><br>Setiap hari · 07.30–22.00 WIB</p>
+ <a class="primary" href="https://wa.me/6285647612072" target="_blank" rel="noopener" style="display:inline-block;text-decoration:none">Chat WhatsApp</a>
+ </div><iframe class="map" title="Peta Laura Bakery Solo" loading="lazy" src="https://www.google.com/maps?q=Jl.%20Slamet%20Riyadi%20No.68%2C%20Solo&output=embed"></iframe></div>
+</div></section>
+</main>
+<footer class="footer">© 2026 Laura Bakery · Baked with love, served with joy.</footer>
+
+<!-- Login pelanggan -->
+<div class="overlay show" id="loginOverlay"><div class="modal">
+ <div class="eyebrow">Welcome to Laura Bakery</div><h2>Login Pelanggan</h2><p class="notice">Masuk untuk mulai memilih menu dan membuat pesanan. Ini adalah demo login di browser.</p>
+ <form id="loginForm"><div class="field"><label>Nama pelanggan</label><input id="loginName" required placeholder="Masukkan nama kamu"></div><div class="field"><label>Kata sandi</label><input id="loginPass" type="password" required minlength="4" placeholder="Minimal 4 karakter"></div><button class="primary" style="width:100%">Masuk</button></form>
+ <p class="notice">Demo ini menyimpan sesi secara lokal di perangkat. Untuk toko online sungguhan, login perlu dihubungkan ke server dan database yang aman.</p>
+</div></div>
+
+<!-- Keranjang -->
+<div class="overlay" id="cartOverlay"><div class="modal">
+ <h2>Keranjang Belanja</h2><div id="cartItems"></div><div style="display:flex;justify-content:space-between;margin-top:18px;font:bold 16px Arial"><span>Total</span><span id="cartTotal">Rp0</span></div>
+ <div class="modalactions"><button class="ghost" onclick="closeModal('cartOverlay')">Lanjut Belanja</button><button class="primary" onclick="goOrder()">Pesan</button></div>
+</div></div>
+
+<!-- Form pemesanan -->
+<div class="overlay" id="orderOverlay"><div class="modal">
+ <h2>Form Pemesanan</h2><div id="orderSummary" class="notice"></div>
+ <form id="orderForm"><div class="field"><label>Nama pemesan</label><input id="buyerName" required></div>
+ <div class="field"><label>Nomor WhatsApp</label><input id="buyerPhone" required type="tel" placeholder="08xxxxxxxxxx"></div>
+ <div class="field"><label>Alamat pengiriman / ambil di toko</label><textarea id="buyerAddress" required placeholder="Tulis alamat lengkap atau 'Ambil di toko'"></textarea></div>
+ <div class="field"><label>Tanggal pengambilan / pengiriman</label><input id="buyerDate" type="date" required></div>
+ <div class="field"><label>Catatan pesanan</label><textarea id="buyerNote" placeholder="Contoh: tulisan pada kue, varian, dll."></textarea></div>
+ <div class="modalactions"><button type="button" class="ghost" onclick="closeModal('orderOverlay')">Kembali</button><button class="primary">Kirim via WhatsApp</button></div></form>
+</div></div>
+
+<script>
+const products=[
+{id:1,name:"Croissant Butter",cat:"Croissant",price:18000,desc:"Pastry berlapis yang renyah di luar dan lembut di dalam.",img:"https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80",best:true},
+{id:2,name:"Donat Glaze",cat:"Donat",price:10000,desc:"Donat empuk dengan lapisan glaze manis.",img:"https://images.unsplash.com/photo-1551024506-0bc0e5f4a5f4?auto=format&fit=crop&w=700&q=80",best:true},
+{id:3,name:"Chocolate Brownies",cat:"Brownies",price:35000,desc:"Brownies cokelat pekat dengan tekstur fudgy.",img:"https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80",best:true},
+{id:4,name:"Roti Sobek",cat:"Roti",price:28000,desc:"Roti lembut berserat dengan isian manis pilihan.",img:"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80"},
+{id:5,name:"Strawberry Cake",cat:"Cake & Tart",price:85000,desc:"Sponge cake lembut dengan krim dan stroberi.",img:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"},
+{id:6,name:"Butter Cookies",cat:"Cookies",price:32000,desc:"Cookies renyah beraroma butter, cocok untuk teman teh.",img:"https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=80"},
+{id:7,name:"Danish Pastry",cat:"Pastry",price:22000,desc:"Pastry berlapis dengan rasa buttery dan topping pilihan.",img:"https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&w=700&q=80"},
+{id:8,name:"Dubai Chewy Cookie",cat:"Cookies",price:25000,desc:"Cookies chewy dengan cokelat dan isian pistachio ala Dubai.",img:"https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=700&q=80"},
+{id:9,name:"Tart Buah Mini",cat:"Cake & Tart",price:16000,desc:"Tart renyah berisi custard dan buah segar.",img:"https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"}
+];
+const money=n=>"Rp"+n.toLocaleString("id-ID");
+let cart={};let active="Semua";
+const cats=["Semua","Roti","Croissant","Donat","Brownies","Cake & Tart","Cookies","Pastry"];
+function card(p){return `<article class="product"><img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=80'"><div class="productbody"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">${money(p.price)}</div><div class="productfoot"><span class="notice">${p.cat}</span><button class="smallbtn" onclick="addCart(${p.id})">+ Keranjang</button></div></div></article>`}
+function render(){document.getElementById("bestGrid").innerHTML=products.filter(p=>p.best).map(card).join("");document.getElementById("filters").innerHTML=cats.map(c=>`<button class="filter ${active===c?'active':''}" onclick="setCat('${c}')">${c}</button>`).join("");document.getElementById("productGrid").innerHTML=products.filter(p=>active==="Semua"||p.cat===active).map(card).join("")}
+function setCat(c){active=c;render()}
+function addCart(id){cart[id]=(cart[id]||0)+1;updateCart();const p=products.find(x=>x.id===id);toast(p.name+" ditambahkan ke keranjang")}
+function changeQty(id,d){cart[id]=(cart[id]||0)+d;if(cart[id]<=0)delete cart[id];updateCart()}
+function total(){return Object.entries(cart).reduce((s,[id,q])=>s+products.find(p=>p.id==id).price*q,0)}
+function updateCart(){document.getElementById("cartCount").textContent=Object.values(cart).reduce((a,b)=>a+b,0);document.getElementById("cartItems").innerHTML=Object.keys(cart).length?Object.entries(cart).map(([id,q])=>{let p=products.find(x=>x.id==id);return `<div class="cartline"><div><b>${p.name}</b><br>${money(p.price)} × ${q}</div><div class="qty"><button onclick="changeQty(${id},-1)">−</button> ${q} <button onclick="changeQty(${id},1)">+</button></div></div>`}).join(""):'<p class="notice">Keranjang masih kosong. Yuk pilih menu favoritmu!</p>';document.getElementById("cartTotal").textContent=money(total())}
+function openCart(){updateCart();document.getElementById("cartOverlay").classList.add("show")}
+function closeModal(id){document.getElementById(id).classList.remove("show")}
+function goOrder(){if(!Object.keys(cart).length){alert("Keranjang masih kosong.");return}closeModal("cartOverlay");document.getElementById("orderSummary").textContent="Total pesanan: "+money(total())+" · "+Object.values(cart).reduce((a,b)=>a+b,0)+" item";document.getElementById("buyerName").value=localStorage.getItem("lauraName")||"";document.getElementById("orderOverlay").classList.add("show")}
+document.getElementById("loginForm").addEventListener("submit",e=>{e.preventDefault();let name=document.getElementById("loginName").value.trim(),pass=document.getElementById("loginPass").value;if(!name||pass.length<4)return;localStorage.setItem("lauraName",name);sessionStorage.setItem("lauraLoggedIn","yes");document.getElementById("loginOverlay").classList.remove("show");toast("Selamat datang, "+name+"!")});
+if(sessionStorage.getItem("lauraLoggedIn")==="yes"){document.getElementById("loginOverlay").classList.remove("show")}
+document.getElementById("orderForm").addEventListener("submit",e=>{e.preventDefault();if(!Object.keys(cart).length)return;let lines=Object.entries(cart).map(([id,q])=>{let p=products.find(x=>x.id==id);return `- ${p.name} x${q}: ${money(p.price*q)}`}).join("%0A");let msg=`Halo Laura Bakery, saya ingin memesan:%0A${lines}%0A%0ATotal: ${money(total())}%0A%0ANama: ${encodeURIComponent(document.getElementById("buyerName").value)}%0ANo. WA: ${encodeURIComponent(document.getElementById("buyerPhone").value)}%0AAlamat: ${encodeURIComponent(document.getElementById("buyerAddress").value)}%0ATanggal: ${document.getElementById("buyerDate").value}%0ACatatan: ${encodeURIComponent(document.getElementById("buyerNote").value)}`;window.open("https://wa.me/6285647612072?text="+msg,"_blank");cart={};updateCart();closeModal("orderOverlay");e.target.reset()});
+function toast(t){let el=document.getElementById("toast");if(!el){el=document.createElement("div");el.id="toast";el.style.cssText="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#3c2824;color:white;padding:12px 20px;border-radius:30px;z-index:60;font:13px Arial";document.body.appendChild(el)}el.textContent=t;el.style.display="block";clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>el.style.display="none",2200)}
+render();updateCart();
+</script>
+</body></html>
